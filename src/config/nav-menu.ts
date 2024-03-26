@@ -6,12 +6,6 @@ export const navMenuConfig: NavMenuConfig = {
       title: "Pages",
       items: [
         {
-          title: "Landing",
-          href: "/landing",
-          description: "A landing page template with differents sections.",
-          image: "fake-img.jpg",
-        },
-        {
           title: "Changelog",
           href: "/releases",
           description: "Replicate of Starlog template with Tailwind CSS.",
