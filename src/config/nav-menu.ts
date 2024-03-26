@@ -3,7 +3,7 @@ import type { NavMenuConfig } from "@/types";
 export const navMenuConfig: NavMenuConfig = {
   infosNav: [
     {
-      title: "Pages",
+      title: "Paginas",
       items: [
         {
           title: "Changelog",
@@ -23,62 +23,68 @@ export const navMenuConfig: NavMenuConfig = {
   ],
   examplesNav: [
     {
-      title: "Examples",
+      title: "Más",
       items: [
         {
-          title: "Static Blog",
+          title: "Blog",
           href: "/blog",
-          description: "A Markdown/MDX blog built using Content Collections.",
+          description: "Encontrá todo lo que necesitas saber sobre Mindbridge.",
           image: "fake-img.jpg",
         },
         {
-          title: "Docs",
+          title: "Documentación",
           href: "/docs/getting-started",
           description:
-            "A Markdown/MDX docs site built using Content Collections.",
+            "La documentación sobre como usar Mindbridge.",
           image: "fake-img.jpg",
         },
         {
-          title: "Blog DB",
-          href: "/#blog-db",
-          description:
-            "Blog built using Astro DB. With categories, views & likes.",
-          image: "fake-img.jpg",
-          disabled: true,
-        },
-        {
-          title: "Ecommerce",
-          href: "/products",
-          disabled: true,
-          description: "Ecommerce pages fetching data from an API.",
+          title: "Releases",
+          href: "/releases",
+          description: "Todas las versiones de Mindbridge y sus cambios.",
           image: "fake-img.jpg",
         },
-        {
-          title: "Anime List",
-          href: "/#anime-list",
-          description: "Fetch anime content from an graphql endpoint",
-          image: "fake-img.jpg",
-          disabled: true,
-        },
-        {
-          title: "Authentification",
-          href: "/#authentification",
-          description: "Implement an authentification using Astro DB & Lucia",
-          image: "fake-img.jpg",
-          disabled: true,
-        },
+        // {
+        //   title: "Blog DB",
+        //   href: "/#blog-db",
+        //   description:
+        //     "Blog built using Astro DB. With categories, views & likes.",
+        //   image: "fake-img.jpg",
+        //   disabled: true,
+        // },
+        // {
+        //   title: "Ecommerce",
+        //   href: "/products",
+        //   disabled: true,
+        //   description: "Ecommerce pages fetching data from an API.",
+        //   image: "fake-img.jpg",
+        // },
+        // {
+        //   title: "Anime List",
+        //   href: "/#anime-list",
+        //   description: "Fetch anime content from an graphql endpoint",
+        //   image: "fake-img.jpg",
+        //   disabled: true,
+        // },
+        // {
+        //   title: "Authentification",
+        //   href: "/#authentification",
+        //   description: "Implement an authentification using Astro DB & Lucia",
+        //   image: "fake-img.jpg",
+        //   disabled: true,
+        // },
       ],
     },
   ],
   links: [
     {
-      title: "Pricing",
+      title: "Nuestros planes",
       href: "/pricing",
       description: "Pricing cards, FAQs and more.",
       image: "fake-img.jpg",
     },
     {
-      title: "About",
+      title: "Sobre nosotros",
       href: "/about",
       description: "Simple page",
       image: "fake-img.jpg",

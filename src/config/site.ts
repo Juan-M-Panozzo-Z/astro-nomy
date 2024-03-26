@@ -7,7 +7,7 @@ export const siteConfig: SiteConfig = {
   url: "https://mindbridge.com.ar",
   ogImage: "https://astro-nomy.vercel.app/og.jpg",
   links: {
-    twitter: "https://twitter.com/miickasmt",
+    twitter: "https://x.com/",
     github: "https://github.com/Juan-M-Panozzo-Z",
   },
 };
