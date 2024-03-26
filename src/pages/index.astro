@@ -38,7 +38,10 @@ import { Icon } from "astro-icon/components";
             <div class="flex justify-center space-x-2 md:space-x-4">
                 <a
                     href="https://app.mindbridge.com.ar"
-                    class={cn(buttonVariants({ size: "lg" }))}
+                    class={cn(
+                        buttonVariants({ size: "lg" }),
+                        "text-xs md:text-base"
+                    )}
                 >
                     Ir a la plataforma
                 </a>
@@ -47,7 +50,7 @@ import { Icon } from "astro-icon/components";
                     rel="noreferrer"
                     class={cn(
                         buttonVariants({ variant: "outline", size: "lg" }),
-                        "px-4"
+                        "px-4 text-xs md:text-base"
                     )}
                 >
                     <Icon name="lucide:book-open-text" class="mr-2 size-5" />
