@@ -3,9 +3,9 @@ import type { SiteConfig } from "@/types";
 export const siteConfig: SiteConfig = {
   name: "Mindbridge",
   description:
-    "An modern example app built using Astro v4 & shadcn/ui. Inspired by shadcn/taxonomy.",
+    "Landingpage del proyecto mindbridge - una app para conectar a pacientes con profesionales de la salud mental",
   url: "https://mindbridge.com.ar",
-  ogImage: "https://astro-nomy.vercel.app/og.jpg",
+  ogImage: "/og.jpeg",
   links: {
     twitter: "https://x.com/mindbridge_app",
     instagram: "https://www.instagram.com/mindbridge.arg/",
