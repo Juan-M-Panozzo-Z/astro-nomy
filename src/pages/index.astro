@@ -12,7 +12,7 @@ import { Icon } from "astro-icon/components";
             class="container flex max-w-[64rem] flex-col items-center gap-5 text-center"
         >
             <a
-                href="https://www.x.com/"
+                href={siteConfig.links.twitter}
                 class={cn(buttonVariants({ variant: "outline", size: "sm" }))}
                 target="_blank"
             >
@@ -53,7 +53,6 @@ import { Icon } from "astro-icon/components";
                         "px-4 text-xs md:text-base"
                     )}
                 >
-                    <Icon name="lucide:book-open-text" class="mr-2 size-5" />
                     Primeros pasos
                 </a>
             </div>
@@ -68,14 +67,14 @@ import { Icon } from "astro-icon/components";
                 <h2
                     class="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
                 >
-                    Features
+                    ¿Qué puedes hacer con Mindbridge?
                 </h2>
                 <p
                     class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 balance-text"
                 >
-                    This project is a replication of Taxonomy using Astro v4 and
-                    shadcn/ui. Some features, such as authentication,
-                    subscriptions and API routes, have not been implemented yet.
+                    Como profesional de la salud, puedees tener tu propio
+                    fichero de pacientes, gestionar turnos, evoluciones diarias,
+                    informes y mucho más.
                 </p>
             </div>
             <div
@@ -88,126 +87,26 @@ import { Icon } from "astro-icon/components";
                         class="flex h-[180px] flex-col justify-between rounded-md p-5"
                     >
                         <svg
-                            viewBox="0 0 63 79"
-                            class="h-14 w-12 fill-current"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M19.4924 65.9282C15.6165 62.432 14.4851 55.0859 16.0999 49.7638C18.8998 53.1193 22.7793 54.1822 26.7977 54.7822C33.0013 55.7081 39.0937 55.3618 44.8565 52.5637C45.5158 52.2434 46.125 51.8174 46.8454 51.386C47.3861 52.9341 47.5268 54.497 47.338 56.0877C46.8787 59.9617 44.9251 62.9542 41.8177 65.2227C40.5752 66.13 39.2604 66.9411 37.9771 67.7967C34.0346 70.4262 32.9679 73.5095 34.4494 77.9946C34.4846 78.1038 34.5161 78.2131 34.5957 78.4797C32.5828 77.5909 31.1124 76.2965 29.9921 74.5946C28.8088 72.7984 28.2458 70.8114 28.2162 68.6615C28.2014 67.6152 28.2014 66.5597 28.0588 65.5282C27.7107 63.0135 26.5144 61.8876 24.2608 61.8227C21.9479 61.7561 20.1183 63.1672 19.6331 65.3893C19.5961 65.5597 19.5424 65.7282 19.4887 65.9263L19.4924 65.9282Z"
-                            ></path>
-                            <path
-                                d="M0 51.3932C0 51.3932 10.5979 46.2433 21.2254 46.2433L29.2382 21.5069C29.5381 20.3106 30.4141 19.4977 31.4029 19.4977C32.3918 19.4977 33.2677 20.3106 33.5677 21.5069L41.5804 46.2433C54.1672 46.2433 62.8058 51.3932 62.8058 51.3932C62.8058 51.3932 44.8044 2.47586 44.7692 2.37772C44.2526 0.931458 43.3804 0 42.2045 0H20.6032C19.4273 0 18.5903 0.931458 18.0384 2.37772C17.9995 2.47401 0 51.3932 0 51.3932Z"
-                            ></path>
-                        </svg>
-
-                        <div class="space-y-2">
-                            <h3 class="font-bold">Astro v4.5</h3>
-                            <p class="text-sm text-muted-foreground">
-                                Layouts, Image, View Transitions and more.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="relative overflow-hidden rounded-lg border bg-background p-2"
-                >
-                    <div
-                        class="flex h-[180px] flex-col justify-between rounded-md p-5"
-                    >
-                        <svg viewBox="0 0 24 24" class="size-12 fill-current">
-                            <path
-                                d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.167 2.167 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44a23.476 23.476 0 0 0-3.107-.534A23.892 23.892 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442a22.73 22.73 0 0 0-3.113.538 15.02 15.02 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87a25.64 25.64 0 0 1-4.412.005 26.64 26.64 0 0 1-1.183-1.86c-.372-.64-.71-1.29-1.018-1.946a25.17 25.17 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25.245 25.245 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933a25.952 25.952 0 0 0-1.345-2.32zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493a23.966 23.966 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23.142 23.142 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39a25.819 25.819 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143a22.005 22.005 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295a1.185 1.185 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"
-                            ></path>
-                        </svg>
-                        <div class="space-y-2">
-                            <h3 class="font-bold">React 18</h3>
-                            <p class="text-sm text-muted-foreground">
-                                Play with React components & config. Use hook.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="relative overflow-hidden rounded-lg border bg-background p-2"
-                >
-                    <div
-                        class="flex h-[180px] flex-col justify-between rounded-md p-5"
-                    >
-                        <svg viewBox="0 0 24 24" class="size-12 fill-current">
-                            <path
-                                d="M0 12C0 5.373 5.373 0 12 0c4.873 0 9.067 2.904 10.947 7.077l-15.87 15.87a11.981 11.981 0 0 1-1.935-1.099L14.99 12H12l-8.485 8.485A11.962 11.962 0 0 1 0 12Zm12.004 12L24 12.004C23.998 18.628 18.628 23.998 12.004 24Z"
-                            ></path>
-                        </svg>
-                        <div class="space-y-2">
-                            <h3 class="font-bold">Database</h3>
-                            <p class="text-sm text-muted-foreground">
-                                Uses Astro DB, a fully managed SQL database.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="relative overflow-hidden rounded-lg border bg-background p-2"
-                >
-                    <div
-                        class="flex h-[180px] flex-col justify-between rounded-md p-5"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 256 256"
-                            class="size-12"
-                            ><rect width="256" height="256" fill="none"
-                            ></rect><line
-                                x1="208"
-                                y1="128"
-                                x2="128"
-                                y2="208"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="16"></line><line
-                                x1="192"
-                                y1="40"
-                                x2="40"
-                                y2="192"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="16"></line></svg
-                        >
-                        <div class="space-y-2">
-                            <h3 class="font-bold">Shadcn/ui</h3>
-                            <p class="text-sm text-muted-foreground mt-3">
-                                UI components built using <b>shadcn/ui</b>.
-                                (Radix UI and Tailwind CSS)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="relative overflow-hidden rounded-lg border bg-background p-2"
-                >
-                    <div
-                        class="flex h-[180px] flex-col justify-between rounded-md p-5"
-                    >
-                        <svg
+                            width="50"
+                            height="50"
                             viewBox="0 0 24 24"
                             fill="none"
-                            stroke="currentColor"
-                            stroke-width="1"
+                            xmlns="http://www.w3.org/2000/svg"
                             class="size-12 fill-current"
                         >
                             <path
-                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
-                            ></path>
+                                d="M16.5 5.5C16.5 7.98528 14.4853 10 12 10C9.51472 10 7.5 7.98528 7.5 5.5C7.5 3.01472 9.51472 1 12 1C14.4853 1 16.5 3.01472 16.5 5.5Z"
+                                ></path>
+                            <path
+                                d="M12 13C6.51068 13 2.0544 17.423 2.00049 22.8995C1.99995 22.9548 2.04477 23 2.1 23H21.9C21.9552 23 22 22.9548 21.9995 22.8995C21.9456 17.423 17.4893 13 12 13Z"
+                                ></path>
                         </svg>
+
                         <div class="space-y-2">
-                            <h3 class="font-bold">Authentication</h3>
+                            <h3 class="font-bold">Fichero digital</h3>
                             <p class="text-sm text-muted-foreground">
-                                <b>Not implement yet</b>. Authentication using
-                                Lucia and Astro DB.
+                                Podrás administrar la ficha de cada paciente de
+                                manera personalizada.
                             </p>
                         </div>
                     </div>
@@ -218,16 +117,154 @@ import { Icon } from "astro-icon/components";
                     <div
                         class="flex h-[180px] flex-col justify-between rounded-md p-5"
                     >
-                        <svg viewBox="0 0 24 24" class="size-12 fill-current">
+                        <svg
+                            width="50"
+                            height="50"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="size-12 fill-current"
+                        >
                             <path
-                                d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"
-                            ></path>
+                                d="M5.40001 0.25C5.81503 0.25 6.15146 0.586436 6.15146 1.00145V2.53909H17.8485V1.00145C17.8485 0.586436 18.185 0.25 18.6 0.25C19.015 0.25 19.3514 0.586436 19.3514 1.00145V2.53909H21.9981C22.5514 2.53909 23 2.98767 23 3.54102V9.26759L1 9.26759V3.54102C1 2.98767 1.44858 2.53909 2.00193 2.53909H4.64856V1.00145C4.64856 0.586436 4.985 0.25 5.40001 0.25Z"
+                                ></path>
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M23 10.7705L1 10.7705V21.9997C1 22.5531 1.44858 23.0017 2.00193 23.0017H21.9981C22.5514 23.0017 23 22.5531 23 21.9997V10.7705ZM15.5192 13.4589C15.8329 13.7307 15.8668 14.2053 15.5949 14.5189L11.6874 19.0276C11.4166 19.34 10.9444 19.3751 10.6305 19.106L8.52644 17.3026C8.21134 17.0325 8.17484 16.5581 8.44493 16.243C8.71502 15.9279 9.18941 15.8914 9.50451 16.1615L11.0411 17.4786L14.4592 13.5346C14.731 13.221 15.2056 13.1871 15.5192 13.4589Z"
+                                ></path>
+                        </svg>
+
+                        <div class="space-y-2">
+                            <h3 class="font-bold">Agenda de citas</h3>
+                            <p class="text-sm text-muted-foreground">
+                                Organizá las citas de cada paciente de manera
+                                individual, sin restricciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="relative overflow-hidden rounded-lg border bg-background p-2"
+                >
+                    <div
+                        class="flex h-[180px] flex-col justify-between rounded-md p-5"
+                    >
+                        <svg
+                            width="50"
+                            height="50"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="size-12 fill-current"
+                        >
+                            <path
+                                d="M4 0.25C4.41421 0.25 4.75 0.585786 4.75 1V3H8.25V1C8.25 0.585786 8.58579 0.25 9 0.25C9.41421 0.25 9.75 0.585786 9.75 1V3H14.25V1C14.25 0.585786 14.5858 0.25 15 0.25C15.4142 0.25 15.75 0.585786 15.75 1V3H19.25V1C19.25 0.585786 19.5858 0.25 20 0.25C20.4142 0.25 20.75 0.585786 20.75 1V3H22C22.5523 3 23 3.44772 23 4V14.15C23 14.2052 22.9552 14.25 22.9 14.25H15.1C14.6306 14.25 14.25 14.6306 14.25 15.1V22.9C14.25 22.9553 14.2052 23 14.15 23H2C1.44772 23 1 22.5523 1 22V4C1 3.44772 1.44772 3 2 3H3.25V1C3.25 0.585786 3.58579 0.25 4 0.25Z"
+                                ></path>
+                            <path
+                                d="M22.9602 15.865C22.9775 15.8057 22.9302 15.75 22.8684 15.75H15.85C15.7948 15.75 15.75 15.7948 15.75 15.85V22.8684C15.75 22.9302 15.8057 22.9775 15.865 22.9603C16.0252 22.9137 16.1728 22.8273 16.2929 22.7071L22.7071 16.2929C22.8272 16.1728 22.9136 16.0253 22.9602 15.865Z"
+                                ></path>
                         </svg>
                         <div class="space-y-2">
-                            <h3 class="font-bold">Subscriptions</h3>
+                            <h3 class="font-bold">Evoluciones diarias</h3>
                             <p class="text-sm text-muted-foreground">
-                                <b>Not sure yet</b>. Free and paid subscriptions
-                                using Stripe.
+                                Llevá un registro diario de cada paciente,
+                                vinculando con citas o sin ellas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="relative overflow-hidden rounded-lg border bg-background p-2"
+                >
+                    <div
+                        class="flex h-[180px] flex-col justify-between rounded-md p-5"
+                    >
+                        <svg
+                            width="50"
+                            height="50"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="size-12 fill-current"
+                        >
+                            <path
+                                d="M9.54344 7.1C9.54344 7.04477 9.49867 7 9.44344 7L3.06667 7.00001C2.47756 7.00002 2 7.47758 2 8.06668V21.9333C2 22.5224 2.47756 23 3.06667 23H14.9333C15.5224 23 16 22.5224 16 21.9333L16 13.5C16 13.4448 15.9552 13.4 15.9 13.4H10.4501C9.94937 13.4 9.54344 12.9941 9.54344 12.4933V7.1Z"
+                                ></path>
+                            <path
+                                d="M15.7371 11.8C15.8106 11.8 15.8581 11.7234 15.8169 11.6625C15.7787 11.606 15.7349 11.5529 15.6859 11.5041L11.4742 7.31077C11.4146 7.25147 11.3488 7.19993 11.2783 7.15677C11.2169 7.11927 11.1434 7.16704 11.1434 7.2389V11.8H15.7371Z"
+                                ></path>
+                            <path
+                                d="M9.06667 1.00001L15.4434 1C15.4987 1 15.5434 1.04477 15.5434 1.1V6.49332C15.5434 6.99406 15.9494 7.39999 16.4501 7.39999H21.9C21.9552 7.39999 22 7.44476 22 7.49999V15.9333C22 16.5224 21.5224 17 20.9333 17H17.5V12.26C17.5 11.5773 17.228 10.9228 16.7443 10.4411L12.5325 6.24779C12.0515 5.76887 11.4004 5.5 10.7216 5.5L8 5.50001V2.06668C8 1.47758 8.47756 1.00001 9.06667 1.00001Z"
+                                ></path>
+                            <path
+                                d="M21.6859 5.50412C21.7349 5.55292 21.7787 5.606 21.8169 5.66247C21.8581 5.72341 21.8106 5.79999 21.7371 5.79999H17.1434V1.2389C17.1434 1.16704 17.2169 1.11927 17.2783 1.15677C17.3488 1.19993 17.4146 1.25147 17.4742 1.31077L21.6859 5.50412Z"
+                                ></path>
+                        </svg>
+
+                        <div class="space-y-2">
+                            <h3 class="font-bold">Informes</h3>
+                            <p class="text-sm text-muted-foreground mt-3">
+                                Generá informes personalizados para cada
+                                paciente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="relative overflow-hidden rounded-lg border bg-background p-2"
+                >
+                    <div
+                        class="flex h-[180px] flex-col justify-between rounded-md p-5"
+                    >
+                        <svg
+                            width="50"
+                            height="50"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="size-12 fill-current"
+                        >
+                            <path
+                                d="M6 1C5.44772 1 5 1.44772 5 2V6C5 6.55228 5.44772 7 6 7H11.25V11.25H4C3.0335 11.25 2.25 12.0335 2.25 13V19C2.25 19.0479 2.25449 19.0947 2.26307 19.1401C1.5232 19.4335 1 20.1557 1 21C1 22.1046 1.89543 23 3 23C4.10457 23 5 22.1046 5 21C5 20.1557 4.4768 19.4335 3.73693 19.1401C3.74551 19.0947 3.75 19.0479 3.75 19V13C3.75 12.8619 3.86193 12.75 4 12.75H11.25L11.25 19C11.25 19.0479 11.2545 19.0947 11.2631 19.1401C10.5232 19.4335 10 20.1557 10 21C10 22.1046 10.8954 23 12 23C13.1046 23 14 22.1046 14 21C14 20.1557 13.4768 19.4335 12.7369 19.1401C12.7455 19.0947 12.75 19.0479 12.75 19L12.75 12.75H20C20.1381 12.75 20.25 12.8619 20.25 13V19C20.25 19.0479 20.2545 19.0947 20.2631 19.1401C19.5232 19.4335 19 20.1557 19 21C19 22.1046 19.8954 23 21 23C22.1046 23 23 22.1046 23 21C23 20.1557 22.4768 19.4335 21.7369 19.1401C21.7455 19.0947 21.75 19.0479 21.75 19V13C21.75 12.0335 20.9665 11.25 20 11.25H12.75V7H18C18.5523 7 19 6.55228 19 6V2C19 1.44772 18.5523 1 18 1H6Z"
+                                ></path>
+                        </svg>
+
+                        <div class="space-y-2">
+                            <h3 class="font-bold">Circulos de profesionales</h3>
+                            <p class="text-sm text-muted-foreground">
+                                Compartir evoluciones, informes y agenda nunca
+                                fue tan facil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="relative overflow-hidden rounded-lg border bg-background p-2"
+                >
+                    <div
+                        class="flex h-[180px] flex-col justify-between rounded-md p-5"
+                    >
+                        <svg
+                            width="50"
+                            height="50"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="size-12 fill-current"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M4.75 2.25C4.75 1.2835 5.5335 0.5 6.5 0.5H17.5C18.4665 0.5 19.25 1.2835 19.25 2.25V4.5H22C22.5523 4.5 23 4.94772 23 5.5V17.5C23 18.0523 22.5523 18.5 22 18.5H17.25V21.75C17.25 22.7165 16.4665 23.5 15.5 23.5H8.5C7.5335 23.5 6.75 22.7165 6.75 21.75V18.5H2C1.44772 18.5 1 18.0523 1 17.5V5.5C1 4.94772 1.44772 4.5 2 4.5H4.75V2.25ZM6.25 4.5H17.75V2.25C17.75 2.11193 17.6381 2 17.5 2H6.5C6.36193 2 6.25 2.11193 6.25 2.25V4.5ZM8.25 15V21.75C8.25 21.8881 8.36193 22 8.5 22H15.5C15.6381 22 15.75 21.8881 15.75 21.75V15H8.25ZM4 9.25C4 8.83579 4.33579 8.5 4.75 8.5H7.25C7.66421 8.5 8 8.83579 8 9.25C8 9.66421 7.66421 10 7.25 10H4.75C4.33579 10 4 9.66421 4 9.25Z"
+                                ></path>
+                        </svg>
+
+                        <div class="space-y-2">
+                            <h3 class="font-bold">Recursos</h3>
+                            <p class="text-sm text-muted-foreground">
+                                Recursos imprimibles para compartir con tus
+                                pacientes.
                             </p>
                         </div>
                     </div>
@@ -237,8 +274,8 @@ import { Icon } from "astro-icon/components";
                 <p
                     class="leading-normal text-muted-foreground sm:text-lg sm:leading-7 balance-text"
                 >
-                    Astronomy also includes a blog and a full-featured
-                    documentation site built using Markdown and MDX from Astro.
+                    Y mucho más. Descubre todas las funcionalidades que
+                    Mindbridge tiene para ofrecerte.
                 </p>
             </div>
         </div>
@@ -248,25 +285,17 @@ import { Icon } from "astro-icon/components";
             class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center"
         >
             <h2
-                class="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+                class="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl text-gradient_indigo-purple"
             >
-                Proudly Open Source
+                100% en la nube
             </h2>
             <p
                 class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
             >
-                Astronomy is open source and powered by open source software. <br
-                />{" "}
-                The code is available on{" "}
-                <a
-                    href={siteConfig.links.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    class="underline underline-offset-4"
-                >
-                    GitHub
-                </a>
-                .
+                Mindbridge es una plataforma <strong>cloud & serverless</strong
+                >, lo que significa que puedes acceder a ella desde cualquier
+                lugar y en cualquier momento, sin necesidad de instalaciones en
+                ningun dispositivo.
             </p>
         </div>
     </section>

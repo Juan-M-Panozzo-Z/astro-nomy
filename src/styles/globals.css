@@ -38,7 +38,7 @@
   }
 
   .dark {
-    --background: 253 75% 5%;
+    --background: 253 75% 10%;
     --foreground: 210 20% 98%;
 
     --card: 224 71.4% 4.1%;
@@ -112,6 +112,14 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: 'Honeypirls';
+    src: url('/fonts/honeypirls.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   * {
     @apply border-border;
   }
@@ -148,6 +156,10 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  .honeypirls {
+    font-family: 'Honeypirls', sans-serif;
   }
 
   /* Documentation part */

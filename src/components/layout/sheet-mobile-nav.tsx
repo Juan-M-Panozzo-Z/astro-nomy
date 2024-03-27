@@ -43,33 +43,10 @@ export function SheetMobileNav({
       </SheetTrigger>
       <SheetContent side="left" className="pr-0">
         <a href="/" className="flex items-center">
-          <Icons.logo className="mr-2 size-8" />
           <span className="font-bold">{siteConfig.name}</span>
         </a>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-10">
           <div className="mt-2 mb-20">
-            {mainNavItems?.length ? (
-              <div className="flex flex-col space-y-3">
-                {mergedMainNavItems?.map(
-                  (item) =>
-                    item.href && (
-                      <a
-                        key={item.href}
-                        href={item.href}
-                        className="text-muted-foreground"
-                        onClick={() =>
-                          item.href.startsWith("/#")
-                            ? setOpen(false)
-                            : undefined
-                        }
-                      >
-                        {item.title}
-                      </a>
-                    )
-                )}
-              </div>
-            ) : null}
-
             {sidebarNavItems?.length ? (
               <div className="flex flex-col space-y-2">
                 {sidebarNavItems.map((item, index) => {
@@ -100,6 +77,28 @@ export function SheetMobileNav({
                     </div>
                   );
                 })}
+              </div>
+            ) : null}
+            <div className="border-t border-muted-foreground w-20 my-4" />
+            {mainNavItems?.length ? (
+              <div className="flex flex-col space-y-3">
+                {mergedMainNavItems?.map(
+                  (item) =>
+                    item.href && (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        className="text-muted-foreground"
+                        onClick={() =>
+                          item.href.startsWith("/#")
+                            ? setOpen(false)
+                            : undefined
+                        }
+                      >
+                        {item.title}
+                      </a>
+                    )
+                )}
               </div>
             ) : null}
           </div>

@@ -1,7 +1,6 @@
 ---
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { Icon } from "astro-icon/components";
 
 type Props = {
   className?: string;
@@ -19,8 +18,7 @@ const { className } = Astro.props;
   <div class="relative container flex items-center justify-between w-full">
     <div class="flex items-center gap-6 md:gap-8 lg:gap-10">
       <a href="/" class="hidden items-center space-x-2 md:flex">
-        <Icon name="lucide:circle-off" class:list="size-6"/>
-        <span class="hidden font-bold sm:inline-block">
+        <span class="hidden sm:inline-block text-3xl honeypirls text-primary">
           {siteConfig.name}
         </span>
       </a>
@@ -34,13 +32,12 @@ const { className } = Astro.props;
 
     <!-- logo mobile center -->
     <div
-      class="absolute top-1/2 left-1/2 -translate-x-4 -translate-y-4 md:hidden"
+      class="md:hidden"
     >
-      <a href="/" aria-label="Astronomy homepage">
-        <Icon name="stars-outline" class="size-8" />
+      <a href="/" aria-label="mindbridge homepage">
+        <h2 class="text-primary honeypirls text-xl">{siteConfig.name}</h2>
       </a>
     </div>
-
     <slot name="right-header" />
   </div>
 </header>
