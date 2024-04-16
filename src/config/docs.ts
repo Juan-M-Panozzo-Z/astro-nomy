@@ -25,7 +25,7 @@ export const docsConfig: DocsConfig = {
             title: "Documentación",
             items: [
                 {
-                    title: "Introducción",
+                    title: "Inicio",
                     href: "/docs/documentation",
                 },
                 {
@@ -33,13 +33,9 @@ export const docsConfig: DocsConfig = {
                     href: "/docs/documentation/dashboard",
                 },
                 {
-                    title: "Configuration  Astro DB",
-                    href: "/docs/documentation/components",
-                },
-                {
-                    title: "Search (Fuse.js)",
-                    href: "/docs/in-progress",
-                },
+                    title: "Ficha de paciente",
+                    href: "/docs/documentation/patients",
+                }
             ],
         },
         // {
