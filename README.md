@@ -2,7 +2,7 @@
 
 An open source application built using the latest features in Astro v4 with shadcn/ui.
 
-![blog](public/og.jpg)
+![blog](public/og.jpeg)
 
 > **Warning**
 > This app is a work in progress. I'm building this in public. You can follow the progress on Twitter [@miickasmt](https://twitter.com/miickasmt).
