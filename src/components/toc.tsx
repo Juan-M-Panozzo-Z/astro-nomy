@@ -7,13 +7,13 @@ interface TocProps {
   toc: TableOfContents;
 }
 
-export function DashboardTableOfContents({ toc }: TocProps) {
+export function DashboardTableOfContents({ toc }: Readonly<TocProps>) {
   const itemIds = toc.items
     ? toc.items
-        .flatMap((item) => [item.url, item?.items?.map((item) => item.url)])
-        .flat()
-        .filter(Boolean)
-        .map((id) => id?.split("#")[1])
+      .flatMap((item) => [item.url, item?.items?.map((item) => item.url)])
+      .flat()
+      .filter(Boolean)
+      .map((id) => id?.split("#")[1])
     : [];
   const activeHeading = useActiveItem(itemIds);
 
@@ -23,7 +23,7 @@ export function DashboardTableOfContents({ toc }: TocProps) {
 
   return (
     <div className="space-y-2">
-      <p className="font-medium">On This Page</p>
+      <p className="font-medium">En esta página</p>
       <Tree tree={toc} activeItem={activeHeading} />
     </div>
   );
