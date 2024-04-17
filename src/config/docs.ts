@@ -21,11 +21,11 @@ export const docsConfig: DocsConfig = {
                 },
                 {
                     title: "Primeros pasos",
-                    href: "/docs/documentation",
+                    href: "/docs/first-steps",
                 },
                 {
                     title: "Mi dashboard",
-                    href: "/docs/documentation/dashboard",
+                    href: "/docs/dashboard",
                 },
             ],
         },
@@ -34,15 +34,15 @@ export const docsConfig: DocsConfig = {
             items: [
                 {
                     title: "Crear mi primer paciente",
-                    href: "/docs/documentation/patients",
+                    href: "/docs/modules/patients",
                 },
                 {
                     title: "Ficha de medicamentos",
-                    href: "/docs/documentation/patients/medicines",
+                    href: "/docs/modules/patients/medicines",
                 },
                 {
                     title: "Agenda de citas",
-                    href: "/docs/documentation/patients/appointments",
+                    href: "/docs/modules/patients/appointments",
                 },
             ],
         },
@@ -51,11 +51,11 @@ export const docsConfig: DocsConfig = {
             items: [
                 {
                     title: "Crear evolución",
-                    href: "/docs/documentation/evolutions",
+                    href: "/docs/modules/evolutions",
                 },
                 {
                     title: "Crear evolución no vinculada",
-                    href: "/docs/documentation/evolutions/standalone",
+                    href: "/docs/modules/evolutions/standalone",
                 },
             ],
         },
@@ -64,7 +64,7 @@ export const docsConfig: DocsConfig = {
             items: [
                 {
                     title: "Crear mi primer informe",
-                    href: "/docs/documentation/reports",
+                    href: "/docs/modules/reports",
                 },
             ],
         },
@@ -73,22 +73,22 @@ export const docsConfig: DocsConfig = {
             items: [
                 {
                     title: "Crear mi primer circulo",
-                    href: "/docs/documentation/circles",
+                    href: "/docs/modules/circles",
                     disabled: true,
                 },
                 {
                     title: "Invitar a un profesional",
-                    href: "/docs/documentation/circles/invite",
+                    href: "/docs/modules/circles/invite",
                     disabled: true,
                 },
                 {
                     title: "Compartir una evolución",
-                    href: "/docs/documentation/circles/share",
+                    href: "/docs/modules/circles/share",
                     disabled: true,
                 },
                 {
                     title: "Compartir un informe",
-                    href: "/docs/documentation/circles/share-report",
+                    href: "/docs/modules/circles/share-report",
                     disabled: true,
                 },
             ],
@@ -98,17 +98,17 @@ export const docsConfig: DocsConfig = {
             items: [
                 {
                     title: "Extras",
-                    href: "/docs/documentation/extras",
+                    href: "/docs/modules/extras",
                     disabled: true,
                 },
                 {
                     title: "Privacidad y seguridad",
-                    href: "/docs/documentation/privacy",
+                    href: "/docs/modules/privacy",
                     disabled: true,
                 },
                 {
                     title: "Soporte y contacto",
-                    href: "/docs/documentation/support",
+                    href: "/docs/modules/support",
                     disabled: true,
                 },
             ],
